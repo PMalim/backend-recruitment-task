@@ -36,7 +36,7 @@ class Application
         if(file_exists('controllers/'.$className.'.php')){
             Controller::run($className, $url[1]);
         }else
-            throw new Exception('No access. '.__DIR__.'../Controllers/'.ucfirst($url[0]).'Controller.php');
+            throw new Exception('No access. '.__DIR__.'../controllers/'.ucfirst($url[0]).'Controller.php');
     }
 
     /**

@@ -4,7 +4,5 @@
         Backend/Full-stack recruitment task
     </h1>
     <hr>
-    <p>
-        <a class="button" href="user/index">Idź do zadania</a>
-    </p>
+    
 </div>

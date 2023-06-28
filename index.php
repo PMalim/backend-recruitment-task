@@ -4,6 +4,7 @@ require_once 'base/application.php';
 require_once 'base/controller.php';
 // controllers
 require_once 'controllers/baseController.php';
+require_once 'controllers/userController.php';
 // models
 require_once 'models/user.php';
 

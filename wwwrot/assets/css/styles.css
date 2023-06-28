@@ -8,6 +8,38 @@ html, body {
     margin: 0;
 }
 
+body {
+    background: #0d1117;
+    color: #dfedf3;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid #dfedf3;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #dfedf3;
+    text-decoration: none;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
 .starting-title {
     text-align: center;
 }
