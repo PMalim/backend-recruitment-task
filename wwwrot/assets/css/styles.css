@@ -34,6 +34,17 @@ body {
     text-decoration: none;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tr td {
+    padding: 6px 13px;
+    border: 1px solid rgb(48, 54, 61);
+}
+
 .container {
     display: block;
     margin: 0 auto;

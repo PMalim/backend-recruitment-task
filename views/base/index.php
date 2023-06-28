@@ -5,6 +5,6 @@
     </h1>
     <hr>
     <p>
-        <a class="button" href="user/index">Idź do zadania</a>
+        <a class="button" href="user/index">Users</a>
     </p>
 </div>

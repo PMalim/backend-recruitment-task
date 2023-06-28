@@ -50,4 +50,20 @@ class User
             throw new \InvalidArgumentException("Wrong type of Company.");
         }
     }
+
+    /**
+     * Return all users from data json
+     * @return array is list of users
+     */
+    public static function getAll() : array
+    {
+        $users = [];
+        $usersData = json_decode(file_get_contents(__DIR__.'\..\dataset\users.json'), true);
+        foreach ($usersData as $userData) {
+            $user = new User($userData["id"], $userData["name"], $userData["username"], $userData["email"], $userData["address"], $userData["phone"], $userData["website"], $userData["company"]);
+            $users[] = $user;
+        }
+
+        return $users;
+    }
 }
