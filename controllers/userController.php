@@ -4,6 +4,7 @@ namespace app\controllers;
 use app\base\Application;
 use app\base\Controller;
 use app\models\User;
+use Exception;
 
 class UserController extends Controller
 {
@@ -39,5 +40,24 @@ class UserController extends Controller
         file_put_contents(__DIR__.'\..\dataset\users.json', $jsonData);
 
         return $this->redirect(["user","index"]);
+    }
+
+    public function actionRemove($id) {
+        $users = User::getAll();
+        $contains = false;
+        foreach ($users as $key => $user) {
+            if ($user->id == $id) {
+                unset($users[$key]);
+                $contains = true;
+            }
+        }
+
+        if($contains == false)
+            throw new Exception('No required user id.');
+
+        $jsonData = json_encode($users, JSON_PRETTY_PRINT);
+        file_put_contents(__DIR__.'\..\dataset\users.json', $jsonData);
+
+        echo json_encode(["success" => true]);
     }
 }

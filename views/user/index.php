@@ -27,7 +27,7 @@ $users = $models["users"];
         <tbody>
         <?php
             foreach($users as $user) {
-                echo '<tr>';
+                echo '<tr id="userRow_'.$user->id.'">';
                 echo '<td>'.$user->name.'</td>';
                 echo '<td>'.$user->username.'</td>';
                 echo '<td><a href="'.$user->email.'">'.$user->email.'</a></td>';
@@ -35,7 +35,7 @@ $users = $models["users"];
                 echo '<td>'.$user->phone.'</td>';
                 echo '<td>'.$user->website.'</td>';
                 echo '<td>'.$user->company["name"].'</td>';
-                echo '<td><a class="button" href="user/remove?id='.$user->id.'">Remove</a></td>';
+                echo '<td><a class="button" onclick="removeUser('.$user->id.',`'.BASE_URL.'/user/remove`)">Remove</a></td>';
                 echo '</tr>';
             }
         ?>
