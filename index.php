@@ -1,4 +1,6 @@
 <?php
+define("BASE_URL", "http://localhost:81/backend-recruitment-task/");
+
 // base
 require_once 'base/application.php';
 require_once 'base/controller.php';

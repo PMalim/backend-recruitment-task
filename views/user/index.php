@@ -10,7 +10,7 @@ $users = $models["users"];
     </h1>
     <hr>
     <h2>Users</h2>
-    <a style="margin:10px 0;" class="button" href="user/create">Add User</a>
+    <a style="margin:10px 0;" class="button" href="<?=BASE_URL?>/user/create">Add User</a>
     <table>
         <thead>
             <tr>

@@ -27,7 +27,7 @@ class Controller
     }
 
     public function redirect($tab) {
-        header("Location: ".ROOT_URL."/".$tab[0]."/".$tab[1]);
+        header("Location: ".BASE_URL."/".$tab[0]."/".$tab[1]);
         exit();
         return true;
     }
