@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Backend/Full-stack recruitment task</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+<?php
+// base
+require_once 'base/application.php';
+require_once 'base/controller.php';
+// controllers
+require_once 'controllers/baseController.php';
+// models
+require_once 'models/user.php';
 
-<body>
+$config = require __DIR__ . '/base/Config.php';
 
-<main>
-    <?php require_once './partials/main.php'; ?>
-</main>
-
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+(new app\base\Application($config))->run();

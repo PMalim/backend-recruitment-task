@@ -1,0 +1,13 @@
+/*Add your custom styles here*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.starting-title {
+    text-align: center;
+}

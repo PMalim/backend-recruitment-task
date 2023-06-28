@@ -1,4 +1,5 @@
 <?php
+use app\models\User;
 
 // Please add your logic here
 
